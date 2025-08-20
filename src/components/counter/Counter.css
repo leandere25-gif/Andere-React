@@ -1,0 +1,39 @@
+
+.botonComprar{
+    background-color: rgb(246, 9, 9);
+    color: blue;
+}
+
+.contadorProductos{
+color: rgb(255, 255, 255);
+font-size: 20px;
+text-align: center;
+}
+
+button{
+    background-color: black;
+    color: brown   ;
+}
+
+.botonComprar{
+background-color: black;
+color: rgb(244, 229, 229);
+margin:5px;
+
+}
+
+
+.buttonContainer{
+width: 300px;
+height: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.botonAgregar{
+
+    background-color: rgb(0, 0, 0);
+    color: rgb(232, 213, 213)   ;
+    margin-left: 50px;
+}

@@ -1,0 +1,44 @@
+body html{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.cardProducto{
+    width: 200px;
+    height: 400px;
+    padding: 20px;
+    margin: 3px;
+    background-color: rgba(55, 7, 158, 0.707);
+    box-shadow: 2px 0 2px 0;
+    border-radius: 5px;
+}   
+.buttonContainer{
+    height: 39px;
+    justify-self: center;
+    
+}
+
+
+img {
+    width: 100%;
+}
+
+h2{
+    font-size: 1.6em;
+    color:rgba(193, 216, 218, 0.953) ;
+}
+
+h3{
+    font-size: 1.3em;
+    color: rgb(134, 134, 134);
+}
+
+.botonDetalles{
+    height: 100%;
+    width: 10em;
+    border-radius: 8px;
+    background-color: rgba(0, 229, 255, 0.317);
+    color: rgb(188, 218, 218);
+    
+}

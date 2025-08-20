@@ -1,7 +1,6 @@
 import carritoImg from '../../assets/carritoImg.png'
 import '../CartWidget/CartWidget.css'
 import ItemListContainer from '../ItemListContainer/ItemListContainer.jsx'
-import '../MensajeProp/MensajeProp.jsx'
 
 const CartWidget = () =>{
 
