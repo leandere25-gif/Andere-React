@@ -5,17 +5,23 @@ body html{
 
 
 .cardProducto{
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 250px;
     height: 400px;
     padding: 20px;
-    margin: 3px;
-    background-color: rgba(55, 7, 158, 0.707);
+    background-color: rgba(254, 139, 7, 0.249);
     box-shadow: 2px 0 2px 0;
     border-radius: 5px;
+    border: 1px solid rgb(130, 117, 93);
+    justify-content: start;
+    align-items: center;
 }   
 .buttonContainer{
-    height: 39px;
     justify-self: center;
+    
+    
     
 }
 
@@ -24,21 +30,23 @@ img {
     width: 100%;
 }
 
-h2{
-    font-size: 1.6em;
+.nameItem{
+    font-size: 1.8em;
     color:rgba(193, 216, 218, 0.953) ;
 }
 
-h3{
+.precioItem{
     font-size: 1.3em;
-    color: rgb(134, 134, 134);
+    color: rgba(211, 211, 253, 0.692);
+    margin-bottom:23%;
 }
 
 .botonDetalles{
-    height: 100%;
+    height: 40px;
     width: 10em;
     border-radius: 8px;
-    background-color: rgba(0, 229, 255, 0.317);
-    color: rgb(188, 218, 218);
+    background-color: rgb(206, 198, 198);
+    color: rgb(0, 0, 0);
+    
     
 }

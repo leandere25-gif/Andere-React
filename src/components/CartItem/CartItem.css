@@ -1,0 +1,29 @@
+.cartItemContainer{
+    padding: 2px;
+    display: inline-block;
+    border: solid 1px black;
+    width: 240px;
+    height: 300px;
+    text-align: center;
+    background-color: rgb(122, 128, 123);
+}
+
+.nameCartItem{
+    color:aliceblue;
+    font-size: 2em;
+}
+
+.cantidadCartItem{
+    color:aliceblue;
+}    
+.precioCartItem{
+    font-weight: bolder;
+    font-size: 1.2em;
+    color:rgb(254, 206, 12);
+}
+.eliminarItem{
+    color: aliceblue;
+    margin-top: 60px;
+    background-color: brown;
+}
+

@@ -1,24 +1,25 @@
 import carritoImg from '../../assets/carritoImg.png'
 import '../CartWidget/CartWidget.css'
-import ItemListContainer from '../ItemListContainer/ItemListContainer.jsx'
-
+import { Link } from 'react-router-dom'
+import { CarritoContext } from '../../Context/CarritoContext'
+import { useContext } from 'react'
 const CartWidget = () =>{
+
+const {cantidadTotal} = useContext(CarritoContext)
 
 
 return(
 <div>
-        <img className="carritoImg" src= {carritoImg}  alt="carrito" />
+        <Link to={"./Cart"}>
+                <img className="carritoImg" src= {carritoImg}  alt="carrito" />
+                <strong className='cantidadCartWidget'>{cantidadTotal}</strong>
 
+        </Link>
 </div>
-    
+
 )
 
 
 }
 
 export default CartWidget
-
-    // <input type="checkbox" name="carrito" id="carritoImg" />
-    // <label htmlFor="carritoImg">
-    // <img className="carritoImg" src= {carritoImg}  alt="carrito" />
-    // </label>

@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <nav className='navBar'>
             <Link to={"/"}>
-            <h1>TiendaCorea</h1>
+            <h1 className='name'>TiendaCorea</h1>
             </Link>
             
             <ul className='ulContainer'>

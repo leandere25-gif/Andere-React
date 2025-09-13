@@ -1,8 +1,8 @@
 
 .contenedorItem{
     width: 400px;
-    height: 700px;
-    background-color: rgba(55, 7, 158, 0.707);
+    height: 750px;
+    background-color: rgba(254, 139, 7, 0.249);
     justify-self: center;
     margin-top: 30px;
     padding: 30px;
@@ -11,11 +11,28 @@
 
 .confirmar{
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.239);
+    background-color: rgba(0, 0, 0, 0.491);
     font-size: 2em;
     text-decoration: none;
 }
 .confirmar:hover{
-    background-color: rgba(166, 18, 159, 0.11);
+    background-color: rgba(0, 0, 0, 0.592);
 }
 
+.cantidadStock{
+    font-size: 1em;
+    color: rgb(255, 0, 0);
+}
+
+.parraItem{
+color:beige ;
+}
+
+.precioDetail{
+    color: aliceblue;
+}
+
+.nombreDetail{
+    color: rgb(210, 159, 30);
+    font-size: 3em;
+}
