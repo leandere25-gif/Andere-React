@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "../ItemDetail/ItemDetail.css"
 import { Link } from "react-router-dom"
-import Counter from "../counter/counter"
+import Counter from "../Counter/Counter"
 import { CarritoContext } from "../../Context/CarritoContext"
 import { useContext } from "react"
 import { toast } from "react-toastify"
