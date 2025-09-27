@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import "../ItemListContainer/ItemListContainer.css"
-// import { getProductos, getProductoPorCategoria } from "../../asyncmock.js"
 import { db } from "../../services/config.js"
 import { collection,getDocs,query,where } from "firebase/firestore"
 import ItemList from "../ItemList/ItemList.jsx"
