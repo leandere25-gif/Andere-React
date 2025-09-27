@@ -26,7 +26,7 @@ import "./Counter.css"
             <button className="botonComprar" onClick={incrementar}> + </button>
             <button className="botonAgregar" onClick={()=>funcionAgregar(contador) } >Agregar al carro</button>
 
-        </div>
+</div>
 )
 
 
