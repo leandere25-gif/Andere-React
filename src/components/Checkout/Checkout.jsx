@@ -2,6 +2,9 @@ import { useContext, useState } from "react"
 import {db} from "../../services/config"
 import { collection, addDoc, updateDoc, doc, getDoc } from "firebase/firestore"
 import { CarritoContext } from "../../Context/CarritoContext"
+import "./Checkout.css"
+
+
 const Checkout = () =>{
 
     const [nombre , setNombre] = useState("")
@@ -36,7 +39,7 @@ const Checkout = () =>{
         item: carrito.map(producto =>({
         id: producto.item.id,
         nombre: producto.item.nombre,
-        cantidad: producto.item.cantidad
+        cantidad: producto.cantidad
 })),
         total: total,
         fecha: new Date(),
@@ -79,13 +82,14 @@ await updateDoc (productoRef,{
     
     return (
     
-    <div>
+    <div className="checkOutContainer">
         <h2>Checkout</h2>
 
         <form onSubmit={manejadorFormulario}>
             {
+                
                 carrito.map(producto=> (
-                    <div key={producto.item.id}>
+                    <div className="containerProductsC" key={producto.item.id}>
                         <p>{producto.item.nombre} x {producto.cantidad}</p>
                         <p>{producto.item.precio}</p>
                         <hr />
@@ -93,23 +97,23 @@ await updateDoc (productoRef,{
                     
                 ))
             }
-            <div>
+            <div className="inputC">
                 <label htmlFor="">Nombre</label>
                 <input type="text" onChange={(e) => setNombre(e.target.value)}/>
             </div>
-            <div>
+            <div className="inputC">
                 <label htmlFor="">Apellido</label>
                 <input type="text" onChange={(e) => setApellido(e.target.value)} />
             </div>
-            <div>
+            <div className="inputC">
                 <label htmlFor="">Telefono</label>
                 <input type="text" onChange={(e) => setTelefono(e.target.value)} />
             </div>
-            <div>
+            <div className="inputC">
                 <label htmlFor="">Email</label>
                 <input type="email" onChange={(e) => setEmail(e.target.value)}/>
             </div>
-            <div>
+            <div className="inputC">
                 <label htmlFor="">Email Confirmacion</label>
                 <input type="email" onChange={(e) => setEmailConfirmacion(e.target.value)}/>
             </div>
