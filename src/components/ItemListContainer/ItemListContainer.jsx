@@ -3,7 +3,7 @@ import "../ItemListContainer/ItemListContainer.css"
 // import { getProductos, getProductoPorCategoria } from "../../asyncmock.js"
 import { db } from "../../services/config.js"
 import { collection,getDocs,query,where } from "firebase/firestore"
-import ItemList from "../itemList/itemList.jsx"
+import ItemList from "../ItemList/ItemList.jsx"
 import { useParams } from "react-router-dom"
 import Loader from "../Loader/Loader"
 
