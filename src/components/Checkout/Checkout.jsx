@@ -83,9 +83,9 @@ await updateDoc (productoRef,{
     return (
     
     <div className="checkOutContainer">
-        <h2>Checkout</h2>
+        
 
-        <form onSubmit={manejadorFormulario}>
+        <form className="formCheck" onSubmit={manejadorFormulario}>
             {
                 
                 carrito.map(producto=> (
@@ -121,10 +121,10 @@ await updateDoc (productoRef,{
                 error && <p style={{color: "red"}}>{error}</p>
             }
 
-            <button type="submit">Confirmar Compra</button>
+            <button className="bottonC" type="submit">Confirmar Compra</button>
             {
                 ordenId && (
-                    <strong>Gracias por tu compra!! Tu numero de orden es: {ordenId}</strong>
+                    <strong className="ordenId">Gracias por tu compra!! Tu numero de orden es: {ordenId}</strong>
                 )
             }
 
